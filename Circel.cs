@@ -9,6 +9,9 @@ namespace Labb_5___OOP
 {
     internal class Circel
     {
+
+        //Math for how to calculate circels
+
         public float _pi;
         public int _radius;
         public float _area;
@@ -38,5 +41,8 @@ namespace Labb_5___OOP
             Console.WriteLine(_volym + "cm³");
             
         }
+
+        
+
     }
 }

@@ -6,46 +6,35 @@ using System.Threading.Tasks;
 
 namespace Labb_5___OOP
 {
-    internal class Triangel
+    internal class Square
     {
-        //Math for calculate triangels
+        //Math for how to calculate squares
 
         public float _area;
         public float _circumference;
         public float _volym;
-        public int _base;
         public int _hight;
-        public int _side1;
-        public int _side2;
+        public int _lenght;
 
-        public Triangel(int triangelBase, int triangelHight, int side1, int side2)
+        public Square(int hight, int lenght)
         {
-            _area = (triangelBase * triangelHight) / 2;
-             _circumference = triangelBase + _side1 + side1; 
-            //_volym = ;
+            _circumference = 2 * (hight + lenght);
+            _area = hight * lenght;
         }
-        
-
         public void GetArea()
         {
             Console.WriteLine(_area + " cm²");
         }
+
         public void GetCircumference()
         {
             Console.WriteLine(_circumference + " cm");
         }
 
-       
+        public void GetVolym()
+        {
+            Console.WriteLine(_volym + "cm³");
 
-        //public void GetVolym()
-        //{
-        //    Console.WriteLine(_volym + "cm³");
-        //}
-
-
-
-
+        }
     }
-
-
 }
